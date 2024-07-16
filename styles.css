@@ -1,0 +1,75 @@
+body {
+    font-family: monospace;
+    background: linear-gradient(to left, rgb(66, 76, 66), rgb(2, 21, 8));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;    
+}
+.container {
+    background: rgb(65, 92, 71);
+    padding: 20px;
+    border-radius: 10px; /* Increased for a softer edge */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), /* Main shadow */
+                10 10px 10px rgba(0, 0, 0, 0.5);  /* Additional shadow for depth */
+    text-align: center;
+    transform: translateY(-10px); /* Slightly lifted for a floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.container:hover {
+    transform: translateY(-20px); /* Further lift on hover */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4), /* Enhanced shadow on hover */
+                0 12px 12px rgba(0, 0, 0, 0.3); /* Additional shadow for depth */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff; /* Adjust text color for better contrast */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Adjust text color for better contrast */
+    font-weight: bold;
+    font-size: large;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Adjust text color for better contrast */
+}
